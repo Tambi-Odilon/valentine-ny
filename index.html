@@ -32,6 +32,7 @@
 </head>
 <body>
     <div id="valentineQuestion"><b>Will you be my valentine?</b></div>
+    <div id="myText"></div>
     <button class="answerButton" onclick="location.href='thankyou.html'">Yes</button>
     <button class="answerButton" id="noButton">I no no wanna o(╥﹏╥)o</button>
     <br>
@@ -42,6 +43,9 @@
             var yesButton = document.querySelector('button[onclick*="thankyou.html"]');
             var currentFontSize = parseInt(window.getComputedStyle(yesButton).fontSize);
             yesButton.style.fontSize = (currentFontSize + 10) + 'px'; // Increase font size by 5px
+            var text = "Please";
+            var times = Math.round(currentFontSize/10);
+            document.getElementById("myText").innerHTML = text.repeat(times) + ' \n' + "&#129402;" + " &#128150;";
         });
     </script>
 </body>

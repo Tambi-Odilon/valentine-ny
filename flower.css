@@ -363,3 +363,15 @@ body{
         transform:translate(-36vmin,1.1vmin) rotateY(-80deg) rotateX(35deg);
     }
 }
+
+#LoveYou {
+    border-radius: 10px;
+    box-shadow: 0 4px 2px -2px #eb8b8b;
+    margin: 20px;
+}
+#LoveYou:hover {
+    font-size: 240%;
+    border: none;
+    transition-duration: 1500ms;
+    z-index: 1;
+}
